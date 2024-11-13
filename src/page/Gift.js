@@ -15,7 +15,7 @@ const Gift = () => {
 
 
             <div className='p-5 bg-[#d83356]  min-w-full rounded flex sm:gap-7 relative overflow-hidden'>
-              <img src={Rabbits_MugImage} className="h-full py-3 scale-125 w-16 sm:w-auto " />
+              <img src={Rabbits_MugImage} className="h-full py-3 scale-125 w-16 sm:w-auto " alt=''/>
               <div className='text-black max-w-2xl'alt='' >
                 <p className='text-sm font-semibold'>Order Today !</p>
                 <h2 className='font-bold text-base sm:text-xl my-2'>The Cozy Rabbit Serios</h2>
