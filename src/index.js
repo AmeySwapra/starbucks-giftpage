@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App"; // The App component that includes Header and Footer
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -17,7 +16,7 @@ import GiftThank from "./component/GiftThank";
 import Header from "./component/Header";
 import Footer from "./component/Footer"
 
-// Modify the App component to include Header and Footer
+
 const AppLayout = ({ children }) => (
   <>
     <Header />
@@ -29,9 +28,9 @@ const AppLayout = ({ children }) => (
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      {/* Redirect root to /giftcards */}
+      
       <Route path="/" element={<Navigate to="/giftcards" replace />} />
-      {/* Wrapping /giftcards routes within AppLayout */}
+      
       <Route path="/giftcards" element={<AppLayout><Gift /></AppLayout>}>
         <Route path="" element={<GiftFeature />} />
         <Route path="anytime" element={<GiftAnytime />} />

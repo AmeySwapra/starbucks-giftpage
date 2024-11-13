@@ -15,11 +15,11 @@ const Header = () => {
 
     return (
         <>
-            {/* desktop and table version */}
+            
             <div className='w-full bg-white hidden sm:flex'>
                 <header className=' md:w-4/5 m-auto flex flex-col lg:flex-row items-center sm:gap-8 md:gap-10 lg:gap-16 py-4'>
                     <div className='min-w-[40px]'>
-                        <img src={logo} className="w-10" />
+                        <img src={logo} className="w-10" alt=''/>
                     </div>
                     <nav className='flex gap-10 lg:gap-16 xl:mr-16'>
                         <NavLink to={""} >Home</NavLink>
@@ -40,10 +40,10 @@ const Header = () => {
                 </header>
             </div>
 
-            {/* mobile version  */}
+           
             <div className='h-40 sm:hidden overflow-hidden relative '>
                 <div className=''>
-                    <img src={welcomeImage} />
+                    <img src={welcomeImage} alt=''/>
                 </div>
                 <div className='w-full absolute top-0 text-white text-2xl p-3'>
                     <div className='px-3 py-2 sm:w-11/12 m-auto flex justify-between'>
